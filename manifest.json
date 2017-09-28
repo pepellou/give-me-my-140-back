@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Give me my 140 back",
+    "description": "I mean, 140 characters is more than enough. Don't you force to change my habits after all we've been together.",
+    "version": "1.0",
+
+    "content_scripts": [{
+        "js": [
+            "jquery.min.js",
+            "jquery-ui.min.js",
+            "extension.js"
+        ],
+        "css": [ "jquery-ui.css" ],
+        "matches": [ "https://twitter.com/*" ],
+        "run_at": "document_end"
+    }]
+}
