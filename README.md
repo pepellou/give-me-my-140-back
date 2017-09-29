@@ -18,3 +18,9 @@ This extension is not in the Chrome Web Store (yet?), but you can install it in 
 I'm not very good designer, nor I want to spend time coding in things like this (I'm just angry at Twitter to try and change my habits for no apparent reason). So if you want to contribute, feel free to [contact me](https://twitter.com/pepellou), fork the repo, create a PR or whatever. No licenses, no protocols, let's just be nice and that's it ;-)
 
 By the way, not only design is required, since for example the counter does not properly work when links are included in the tweet (since twitter shortens them). Also some other ideas might arise (block/unblock the tweet button for instance).
+
+
+## Screenshots
+
+![Green counter](/img/screenshot_green.png)
+![Passed the limit](/img/screenshot_red.png)
