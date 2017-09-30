@@ -8,9 +8,11 @@ $(function() {
         if (tweetLength <= 140) {
             counter.css('color', 'green');
             tweetButton.removeAttr("disabled");
+            tweetButton.css('opacity', 1);
         } else {
             counter.css('color', 'red');
             tweetButton.attr("disabled", true);
+            tweetButton.css('opacity', 0.3);
         }
     };
 
