@@ -16,11 +16,24 @@ $(function() {
         }
     };
 
-    var styles = 'color: green; font-size: 24px; z-index: 5000; height: 30px; margin-top: -30px; float: right; margin-right: 120px;';
+    var styles = {
+        'float': 'right',
+        'color': 'green',
+        'height': '30px',
+        'z-index': '5000',
+        'font-size': '24px',
+        'margin-top': '-30px',
+        'margin-right': '120px'
+    };
 
     if ($('#twitter-extension-my-140-back').length == 0) {
-        $('#global-tweet-dialog .modal-tweet-form-container').append('<div id="twitter-extension-my-140-back" style="' + styles + '"></div>');
+        var tweetBox = $('#global-tweet-dialog .modal-tweet-form-container');
+
+        tweetBox.append('<div id="twitter-extension-my-140-back"></div>');
+        $('#twitter-extension-my-140-back').css(styles);
+
         updateCounter();
     }
+
     setInterval(updateCounter, 100);
 });
